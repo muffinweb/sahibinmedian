@@ -29,6 +29,7 @@
         rows.forEach(row => {
             // Reklam satırlarını atla
             if (row.classList.contains("nativeAd")) return;
+            if (row.classList.contains("searchResultsPromoSuper")) return;
 
             // Fiyat Temizleme
             const priceEl = row.querySelector("td.searchResultsPriceValue span");
